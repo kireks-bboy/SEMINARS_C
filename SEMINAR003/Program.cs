@@ -7,31 +7,31 @@ void CheckKoord(int x, int y)
     else if (x > 0 && y < 0) Console.WriteLine("eto chetvert' # 4");
     else if (x < 0 && y > 0) Console.WriteLine("eto chetvert' # 2");
     else if (x < 0 && y < 0) Console.WriteLine("eto chetvert' # 3");
-    else Console.WriteLine("точка находится на координатной оси");
+    else Console.WriteLine("tochka nahodistsa na koordinatnoy osi");
 }
 
 string CheckKoord2(int x, int y)
 {
     string res;
-    if (x > 0 && y > 0) res = "это четверть № 1";
-    else if (x > 0 && y < 0) res = "это четверть № 4";
-    else if (x < 0 && y > 0) res = "это четверть № 2";
-    else if (x < 0 && y < 0) res = "это четверть № 3";
-    else res = "точка находится на координатной оси";
+    if (x > 0 && y > 0) res = "eto chetvert' # 1";
+    else if (x > 0 && y < 0) res = "eto chetvert' # 2";
+    else if (x < 0 && y > 0) res = "eto chetvert' # 3";
+    else if (x < 0 && y < 0) res = "eto chetvert' # 4";
+    else res = "tochka nahodistsa na koordinatnoy osi";
     return res;
 }
 
 try
 {
-    Console.WriteLine("Введите координату Х");
+    Console.WriteLine("Vvedite koordinaty X");
     int x = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Введите координату Y");
+    Console.WriteLine("Vvedite koordinaty Y");
     int y = Convert.ToInt32(Console.ReadLine());
     CheckKoord(x, y);
     Console.WriteLine(CheckKoord2(x,y));
 }
 catch
 {
-    Console.WriteLine("Надо было вводить именно целые числа!");
+    Console.WriteLine("Nyzno bilo vvodit' celie chisla");
 }
 
