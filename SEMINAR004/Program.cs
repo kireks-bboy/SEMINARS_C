@@ -20,22 +20,55 @@
 // 456 -> 3
 // 78 -> 2
 //89126 -> 5
+// Console.WriteLine("Введите число");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int X = Acount(num);
+// Console.WriteLine($"Количестов цифр в числе равно {X}");
+
+// int Acount(int num)
+// {
+// int count = 0;
+
+// while (num != 0)
+// {
+// num = num / 10;
+// count = count + 1;
+// }
+// return count;
+// }
+
+
+
+
+
+
+
+// three
+//Задача 28: Напишите программу, которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
+// 4 -> 24
+// 5 -> 120
+
 Console.WriteLine("Введите число");
 int num = Convert.ToInt32(Console.ReadLine());
-int X = Acount(num);
-Console.WriteLine($"Количестов цифр в числе равно {X}");
+int X = Factorial(num);
+Console.WriteLine($"Произведение чисел от 1 до N равно = {X}");
 
-int Acount(int num)
+int Factorial(int num)
 {
-int count = 0;
+  int fact = 1;
+  for (int i = 1; i <= num; i++)
+  {
+    fact = fact*i;
+  }
+  return fact;
+}
 
-while (num != 0)
-{
-num = num / 10;
-count = count + 1;
-}
-return count;
-}
+
+
+
+//four
+// Задача 30: Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
+// [1,0,1,1,0,1,0,0]
 
 
 
