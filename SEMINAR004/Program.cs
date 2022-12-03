@@ -48,20 +48,20 @@
 // 4 -> 24
 // 5 -> 120
 
-Console.WriteLine("Введите число");
-int num = Convert.ToInt32(Console.ReadLine());
-int X = Factorial(num);
-Console.WriteLine($"Произведение чисел от 1 до N равно = {X}");
+// Console.WriteLine("Введите число");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int X = Factorial(num);
+// Console.WriteLine($"Произведение чисел от 1 до N равно = {X}");
 
-int Factorial(int num)
-{
-  int fact = 1;
-  for (int i = 1; i <= num; i++)
-  {
-    fact = fact*i;
-  }
-  return fact;
-}
+// int Factorial(int num)
+// {
+//   int fact = 1;
+//   for (int i = 1; i <= num; i++)
+//   {
+//     fact = fact*i;
+//   }
+//   return fact;
+// }
 
 
 
@@ -73,6 +73,23 @@ int Factorial(int num)
 
 
 
+int[] rendr(int len)
+{
+int[] array = new int[len];
+Random rnd = new Random();
+for (int i = 0; i < len; i++)
+{
+array[i] = rnd.Next(0, 2);
+}
+return array;
+}
+int len = 8;
+int[] array = rendr(len);
 
+// Array.ForEach(array, Console.WriteLine);
+for (int i = 0; i < len; i++)
+{
+Console.Write($"{array[i]} ");
+}
 
 
