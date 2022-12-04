@@ -1,0 +1,14 @@
+Console.WriteLine("Введите целое число a");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите целое число b");
+int b = Convert.ToInt32(Console.ReadLine());
+int square2 = b*b;
+if (a == square2)
+{
+    Console.WriteLine($"Число a {a} является квадратом числа b {b} ");
+}
+
+else
+{
+    Console.WriteLine($"Число a {a} не является квадратом числа b {b} ");
+}
